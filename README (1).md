@@ -1,12 +1,5 @@
 # Data Modeling with Postgres
 
-## Table of contents
-* [Introduction](#Introduction)
-* [Purpose and Goals](#Purpose-and-Goals)
-* [How to run the Python scripts](#How-to-run-the-Python-scripts)
-* [Files](#files)
-* [ETL](#etl)
-
 ## Introduction
 
 This project is to build a consistent database called Sparkify in which all data related songs, artists, users and the playsongs action be organize under a star schema
@@ -28,10 +21,9 @@ $
 # Files
 
 In the repository we have two folder of files (all files in JSON formats):
+Song files: In this folder we can found information related the songs and their belong artists. 
 
-* Song files: In this folder we can found information related the songs and their belong artists. 
-
-* Log files: In this folder we can found information related the songs played with their timestamp and users who have listented to.
+Log files: In this folder we can found information related the songs played with their timestamp and users who have listented to.
 
 
 # ETL
@@ -41,28 +33,15 @@ Fact table:
 
 * songplay table) in which are present all the songs played by the users 
 
-![song play table](songplaystable.png)
-
+![Algorithm schema](./images/schema.jpg)
 
 
 and the Dimenstion tables: 
 
 * users
-
-![song play table](userstable.png)
-
 * artists
-
-![song play table](artiststable.png)
-
 * time 
-
-![song play table](timetable.png)
-
 * songs
-
-![song play table](songstable.png)
-
 
 For the fact table there is a serial identifier as Primary Key.
 For the dimension tables we have created the belong id for each purpose table.
